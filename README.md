@@ -15,7 +15,7 @@ First, clone the repository to your local machine:
 
 bash
 
-git clone https://github.com/yourusername/yourgame.git
+git clone https://github.com/baldlow/dinosaurGameClone.git
 cd yourgame
 
 2. Install Raylib
