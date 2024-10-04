@@ -1,6 +1,18 @@
 🎮 C and Raylib Game
 
 A 2D platformer game built using C and the Raylib library. The game features custom sprites, game physics, collision detection, and more.
+📋 Table of Contents
+
+    Prerequisites
+    Installation Instructions
+    How to Play
+    Troubleshooting
+    Project Structure
+    Screenshots
+    Contribution
+    License
+    Contact
+
 📋 Prerequisites
 
 Make sure you have the following tools installed on your machine:
@@ -9,52 +21,42 @@ Make sure you have the following tools installed on your machine:
     Raylib Library: Follow the instructions below to install Raylib based on your operating system.
 
 🔧 Installation Instructions
-1. Clone the Repository
 
-First, clone the repository to your local machine:
-
-bash
+    Clone the Repository
 
 git clone https://github.com/baldlow/dinosaurGameClone.git
-cd yourgame
+cd dinosaurGameClone
 
-2. Install Raylib
+    Install Raylib
 
 Follow the instructions below based on your operating system:
 
     Linux
 
-    bash
-
-sudo apt install libraylib-dev
+    sudo apt install libraylib-dev
 
 macOS
 
-bash
-
-    brew install raylib
+brew install raylib
 
     Windows
         Download the Raylib installer.
         Follow the setup instructions and include it in your system path.
+        For detailed installation instructions, visit the Raylib official documentation.
 
-For detailed installation instructions, visit the Raylib official documentation.
-3. Compile the Game
+    Compile the Game
 
 Navigate to the project directory and compile the game using the following command:
 
-bash
+gcc -o dinosaurGameClone main.c -lraylib -lm -lpthread -ldl -lrt -lX11
 
-gcc -o mygame main.c -lraylib -lm -lpthread -ldl -lrt -lX11
+This command links the necessary libraries and outputs an executable named dinosaurGameClone. Adjust the command if you are using a different operating system.
 
-This command links the necessary libraries and outputs an executable named mygame. Adjust the command if you are using a different operating system.
-4. Run the Game
+    Run the Game
 
 After compiling, run the game executable:
 
-bash
-
-./mygame
+./dinosaurGameClone
 
 🕹️ How to Play
 
@@ -81,4 +83,17 @@ Here's a quick look at the structure of the project:
 
 ✨ Screenshots
 
-![Gameplay](resources/gameplayScreenshot.png)
+🤝 Contribution
+
+Contributions are welcome! Please follow these steps:
+
+    Fork the repository.
+    Create a new branch (git checkout -b feature-branch).
+    Make your changes.
+    Commit your changes (git commit -m 'Add some feature').
+    Push to the branch (git push origin feature-branch).
+    Open a pull request.
+
+📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
